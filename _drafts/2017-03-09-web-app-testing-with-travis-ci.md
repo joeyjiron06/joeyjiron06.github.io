@@ -16,3 +16,12 @@ Goals of this Post are setting up a testing environment where you will have the 
 
 
 I will show how to do all this with all open source tools which means everything is FREE!
+
+
+
+### Links
+
+- https://docs.travis-ci.com/user/gui-and-headless-browsers/
+- https://saucelabs.com/
+- https://docs.travis-ci.com/user/encryption-keys/
+- http://webdriver.io/guide/usage/cloudservices.html#Sauce-Labs
