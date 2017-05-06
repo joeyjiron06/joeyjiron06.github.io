@@ -15,4 +15,4 @@ Objectives
 http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt
 https://semaphoreci.com/community/tutorials/a-tdd-approach-to-building-a-todo-api-using-node-js-and-mongodb
 http://mongoosejs.com/docs/index.html
-
+http://blog.slatepeak.com/refactoring-a-basic-authenticated-api-with-node-express-and-mongo/
