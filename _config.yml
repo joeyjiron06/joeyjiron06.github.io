@@ -38,6 +38,8 @@ collections:
   projects:
     layout: "project"
     output: true
+  img:
+    img
 
 
 

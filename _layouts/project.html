@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: base
+headerOverlay: true
 
 # fixme this is an ugly solution. just a copy and paste from base. we should be able
 # to merge the two
@@ -10,46 +11,31 @@ common-js:
   - "/js/project.js"
 ---
 
+{% include header.html type="page" %}
 
 <link rel="stylesheet" href="/css/project.css">
 
 
-<!-- <div class="project-gallery">
-  <div class="project-gallery__arrow project-gallery__arrow--left">
-      <div class="project-gallery__arrow-icon project-gallery__arrow-icon--left"></div>
+<div class="project-content">
+
+  <div class="project-details">
+    <div>{{ content }}</div>
   </div>
 
-  {% for image in page.images %}
+  {% assign images = (site.static_files | where_exp: 'file', 'file.path contains page.img_folder') %}
+
+ <div class="project-gallery">
+  {% for image in images %}
     <img src="{{ image.path }}" alt="{{ image.title }}" class="project-gallery__image" data-img-index="{{ forloop.index }}"/>
   {% endfor %}
+</div> 
 
-  <div class="project-gallery__arrow project-gallery__arrow--right">
-    <div class="project-gallery__arrow-icon project-gallery__arrow-icon--right"></div>
-  </div>
-</div> -->
-
-<div>{{ content }}</div>
-
-
-
+</div>
 
 
 {% if page.social-share %}
   {% include social-share.html %}
 {% endif %}
-
-<ul class="pager blog-pager">
-  {% if page.previous.url %}
-  <li class="previous">
-    <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-  </li>
-  {% endif %}
-  {% if page.next.url %}
-  <li class="next">
-    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
 
 {% if page.comments %}
   <div class="disqus-comments">

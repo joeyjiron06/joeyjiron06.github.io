@@ -1,17 +1,28 @@
 ---
-layout: page
+layout: base
+headerOverlay: true
 title: Projects
 subtitle: These are the various projects I have worked on over the years
 css:
   - "/css/project.css"
 ---
 
+{% include header.html type="page" %}
 
-{% for project in site.projects %}
-  <a class="project-preview" href="{{ project.url }}">
-    <img src="{{ project.images.first.path }}" alt="{{ project.title }}"/>
-    <div class="project-preview__title">
-      {{ project.title }}
-    </div>
-  </a>
-{% endfor %}
+
+<div class="projects-container">
+
+  <!-- SORT BY FILENAME  -->
+ {% assign projects = (site.projects | sort: 'order') %}
+
+
+  {% for project in projects %}
+
+    <a class="project-preview" href="{{ project.url }}">
+      <img class="project-preview__img" src="{{ project.img_preview }}" alt="{{ project.title }}"/>
+      <h2 class="project-preview__title"> {{ project.title }} </h2>
+      <p class="project-preview__subtitle">{{ project.subtitle }}</p>
+    </a>
+  {% endfor %}
+
+</div>
