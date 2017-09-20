@@ -5,7 +5,7 @@ published: false
 
 Objectives
 
-- TESTS! I'm a fan of TDD and will show you how to write this all using TDD
+- TESTS! I'm a fan of TDD and will show you how to use it in this process
 - create users and securly save them in a database
 - verify passwords
 - link metadata to the user
