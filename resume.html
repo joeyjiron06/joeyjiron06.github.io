@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Joey's Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    html {
+      background: rgb(13, 13, 13);
+    }
+
+    body {
+      background: rgb(13, 13, 13);
+      background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(39, 39, 39, 1) 100%);
+      color: #F2F2F2;
+      min-height: 100vh;
+    }
+
+
+    a:link {
+      color: #0679E1;
+    }
+
+    a:visited {
+      color: #4099E8;
+    }
+
+    a:hover {
+      color: #0679E1;
+    }
+
+    a:active {
+      color: #0679E1;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+
+    @-webkit-keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .page-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 880px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+      position: relative;
+      animation: fade-in 1000ms ease-in;
+    }
+
+    .image-of-me {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 393px;
+      height: 393px;
+    }
+
+    .intro-title-container {
+      display: flex;
+      margin-top: 30px;
+    }
+
+    .intro-title {
+      font-size: 64px;
+    }
+
+    .intro-subtitle {
+      font-size: 30px;
+      font-weight: 100;
+      font-style: italic;
+    }
+
+    .intro-paragraph {
+      margin-top: 50px;
+    }
+
+
+    .divider {
+      height: 1px;
+      width: 80%;
+      background: white;
+      opacity: 0.8;
+      margin-top: 30px;
+    }
+
+    .top-divider {
+      max-width: 400px;
+    }
+
+    .bottom-divider {
+      max-width: 300px;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .section {
+      width: 100%;
+      margin-top: 60px;
+    }
+
+    .experience-item {
+      margin-top: 26px;
+      line-height: 1.6;
+    }
+
+    .experience-title {
+      font-weight: bold;
+    }
+
+    .experience-jobname {
+      font-weight: 100;
+    }
+
+    .experience-dates {
+      margin-top: 8px;
+      opacity: 0.7;
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    .skill-title {
+      flex-shrink: 0;
+      min-width: 120px;
+      font-weight: bold;
+    }
+
+    .skill-bar-container {
+      border: solid 2px white;
+      flex-grow: 1;
+      max-width: 350px;
+    }
+
+    .skill-bar {
+      background: white;
+      height: 8px;
+    }
+
+    .skill-bar-expert {
+      width: 90%;
+    }
+
+    .skill-bar-almost-expert {
+      width: 80%;
+    }
+
+    .skill-bar-proficient {
+      width: 68%;
+    }
+
+    .section-awards {
+      line-height: 1.8;
+    }
+
+    .blinker {
+      width: 1px;
+      background: white;
+      opacity: 0.8;
+      align-self: stretch;
+      animation: blink 1s infinite;
+      -webkit-animation: blink 1s infinite;
+    }
+
+    .icons-container {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+
+    .icon {
+      display: block;
+      margin-bottom: 20px;
+      opacity: 0.7;
+      transition: opacity ease-in 250ms;
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <div class="page-content">
+    <img class="image-of-me" src="https://lh3.googleusercontent.com/pFXbBMgbkxMpjj8H7lpElYvIInAlpfSUSCriI1X9WEFCrqJplu6YUBah30CKE7ZvPrDxRjlYLfl8XrOYvmLM1Sxo-NJRnSZ2bmExkUE33Mw7NtP5a3kar8b7QqKknze-8OgjeR5vYBL8knTp3SjMGNZSTGPtkaybiab5MEXI2D-LfIjG3P47JGCMY1AUqK_XgxxYPBwZn-V9nw4wmKuZvSEw6etpPkLEnkWYzDjDDlK-0PEC5rGHIcoetPbc1nq5ppnIgwiMLSNZsJGjSDCWAJG_2dp40Vx6BiFqTzFqJFqa72t8oDrmIZpD7-5z4pDC3YFTgrCVuLYWzuciXAut5e4hu2YS1bJOme_c3umP53dTUSQJXyhYcxiYf4v4G4MdM1L7MeogGoZUUkq5hJjPTkzdbi_R55NW_o8MiU2zA_ksa13wnD1O6Tb6GUKtZkQmH1rCdoZwK8-HPdnh1Og1v48gHk5P1pPYje9pX7blU5ASaSFMU5DXJg1ADuuLIUI3AujhAQZvSyn7s7Mk14wladixxLOZ9K-50FbDPfQBhFMiEU-Bf8rK44YQD6vhUZlOYyhDXl2WWXzakBPUW-wiAO4lXhVjkwnINB4o2UE=w590-h393-no"
+      alt="me" />
+
+    <div class="icons-container">
+
+      <a href="https://github.com/joeyjiron06">
+
+        <svg class="icon" width="32px" height="32px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+          <title>Fill 51</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="GitHub-Mark" transform="translate(-136.000000, -331.000000)" fill="#FFFFFE">
+              <path d="M152.608,331.455 C143.614,331.455 136.32,338.748 136.32,347.745 C136.32,354.942 140.987,361.047 147.46,363.201 C148.275,363.351 148.572,362.848 148.572,362.416 C148.572,362.029 148.558,361.005 148.55,359.646 C144.019,360.63 143.063,357.462 143.063,357.462 C142.322,355.58 141.254,355.079 141.254,355.079 C139.775,354.069 141.366,354.089 141.366,354.089 C143.001,354.204 143.861,355.768 143.861,355.768 C145.314,358.257 147.674,357.538 148.602,357.121 C148.75,356.069 149.171,355.351 149.636,354.944 C146.019,354.533 142.216,353.135 142.216,346.893 C142.216,345.115 142.851,343.66 143.893,342.522 C143.725,342.11 143.166,340.453 144.053,338.211 C144.053,338.211 145.42,337.773 148.532,339.881 C149.831,339.519 151.225,339.339 152.61,339.332 C153.994,339.339 155.387,339.519 156.688,339.881 C159.798,337.773 161.163,338.211 161.163,338.211 C162.052,340.453 161.493,342.11 161.326,342.522 C162.37,343.66 163,345.115 163,346.893 C163,353.151 159.191,354.528 155.563,354.931 C156.147,355.434 156.668,356.428 156.668,357.947 C156.668,360.125 156.648,361.882 156.648,362.416 C156.648,362.852 156.942,363.359 157.768,363.2 C164.236,361.041 168.899,354.94 168.899,347.745 C168.899,338.748 161.605,331.455 152.608,331.455"
+                id="Fill-51"></path>
+            </g>
+          </g>
+        </svg>
+
+      </a>
+
+      <a href="https://www.linkedin.com/in/joeyjiron">
+        <svg class="icon" width="32px" height="32px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+          <title>Group 3</title>
+          <desc>Created with Sketch.</desc>
+          <defs>
+            <polygon id="path-1" points="0 0 144.004 0 144.004 143.94 0 143.94"></polygon>
+          </defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="In-White-2in-TM">
+              <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                  <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M122.708,122.707 L101.364,122.707 L101.364,89.287 C101.364,81.318 101.218,71.067 90.265,71.067 C79.152,71.067 77.446,79.748 77.446,88.711 L77.446,122.707 L56.106,122.707 L56.106,53.985 L76.591,53.985 L76.591,63.375 L76.877,63.375 C79.729,57.973 86.696,52.277 97.087,52.277 C118.715,52.277 122.708,66.511 122.708,85.013 L122.708,122.707 Z M32.034,44.591 C25.188,44.591 19.648,39.042 19.648,32.205 C19.648,25.374 25.188,19.825 32.034,19.825 C38.863,19.825 44.412,25.374 44.412,32.205 C44.412,39.042 38.863,44.591 32.034,44.591 Z M21.35,122.707 L42.71,122.707 L42.71,53.985 L21.35,53.985 L21.35,122.707 Z M133.345,0 L10.629,0 C4.765,0 0,4.648 0,10.376 L0,133.61 C0,139.345 4.765,144 10.629,144 L133.345,144 C139.219,144 144.004,139.345 144.004,133.61 L144.004,10.376 C144.004,4.648 139.219,0 133.345,0 Z"
+                  id="Fill-1" fill="#FFFFFE" mask="url(#mask-2)"></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+
+      <a href="https://www.facebook.com/joey.jiron">
+        <svg class="icon" width="32px" height="32px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <title>flogo-HexRBG-Wht-58</title>
+          <path class="cls-1" d="M53.85,0H3.15A3.15,3.15,0,0,0,0,3.15v50.7A3.15,3.15,0,0,0,3.15,57h27.3V35H23V26.33h7.41V20c0-7.37,4.49-11.38,11.06-11.38A62.15,62.15,0,0,1,48.15,9v7.69H43.61c-3.57,0-4.26,1.69-4.26,4.18v5.5H47.9L46.79,35H39.35V57h14.5A3.15,3.15,0,0,0,57,53.85V3.15A3.15,3.15,0,0,0,53.85,0Z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="intro-title-container">
+      <div class="intro-title">
+        Hi, I'm Joey.
+      </div>
+      <div class="blinker"></div>
+    </div>
+
+
+    <div class="intro-subtitle">
+      Web Developer
+    </div>
+
+    <div class="divider top-divider"></div>
+
+    <div class="contact-info">
+      <p>Seattle, WA</p>
+      <p>joeyjiron06@gmail.com</p>
+      <p>
+        <a href="http://joeyjiron06.github.io/">joeyjiron06.github.io</a>
+      </p>
+      <p>323.552.1377</p>
+    </div>
+
+    <div class="divider bottom-divider"></div>
+
+    <p class="intro-paragraph">
+      I am a passionate front-end developer with 5 years of experience and I am always interested in learning something new. I
+      love javascript and have an interest in creating beautiful products that people can use with ease. I’ve had multiple
+      experiences starting a project with zero code and taking it to production to get it in the hands of users. I have also
+      mentored new team members and junior developers, teaching them component design, code architecture, testing methodologies,
+      and much more.
+    </p>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+
+      <div class="experience-item">
+        <p class="experience-title">SENIOR SOFTWARE ENGINEER</p>
+        <p class="experience-jobname">SONY NETWORK ENTERTAINMENT</p>
+        <p class="experience-dates">March 2015 - July 2018</p>
+      </div>
+
+      <div class="experience-item">
+        <p class="experience-title">SOFTWARE ENGINEER</p>
+        <p class="experience-jobname">FAN TV</p>
+        <p class="experience-dates">October 2013 - March 2015</p>
+      </div>
+
+      <div class="experience-item">
+        <p class="experience-title">ANDROID ENGINEER</p>
+        <p class="experience-jobname">Visualization and Graphics Research Group @ UC DAVIS</p>
+        <p class="experience-dates">June 2013 - September 2013</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="experience-item">
+        <p class="experience-title">B.S Computer Science</p>
+        <p class="experience-jobname">University of California Davis</p>
+        <p class="experience-dates">September 2010 - May 2013</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+
+      <div class="skill">
+        <div class="skill-title">JAVASCRIPT</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-expert"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">HTML</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-expert"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">CSS</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-almost-expert"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">REACT</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-proficient"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">NODE / NPM</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-almost-expert"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">EMBER JS</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-expert"></div>
+        </div>
+      </div>
+
+
+      <div class="skill">
+        <div class="skill-title">JAVA</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-almost-expert"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">ANDROID</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar skill-bar-proficient"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section section-awards">
+      <h2>Awards</h2>
+
+      <p>Playstation Winter Hackathon 2016: honorable mention, work filed under patent</p>
+      <p>Playstation Champion Employee Award 2016: awarded for taking initiative and developing a video abstraction library
+        for the team as well as others in the company
+      </p>
+      <p>
+        Playstation Core Value Employee Award 2016: awarded for showing excellence in teamwork, leadership, and sharing knowledge
+        with others to build a better product
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    (function () {
+      var titleEl = document.getElementsByClassName('intro-title')[0];
+      var blinkerEl = document.getElementsByClassName('blinker')[0];
+      var delayBetweenTyping = 300;
+      var word = "Hi, I'm Joey.";
+      var index = 1;
+
+      var intervalId = setInterval(function () {
+        if (index > word.length) {
+          setTimeout(function () {
+            blinkerEl.className = "";
+          }, 750);
+          clearInterval(intervalId);
+          return;
+        }
+
+        titleEl.innerHTML = word.substring(0, index);
+
+        index++;
+      }, delayBetweenTyping);
+    }());
+  </script>
+</body>
+
+</html>
