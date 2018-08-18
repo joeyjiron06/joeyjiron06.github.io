@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## React + Material UI + Travis CI + Github Pages Setup
 
