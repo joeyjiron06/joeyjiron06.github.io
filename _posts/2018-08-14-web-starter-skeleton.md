@@ -211,3 +211,5 @@ deploy:
   on:
     branch: master
 ```
+
+That's it! Go deploy and have fun!
