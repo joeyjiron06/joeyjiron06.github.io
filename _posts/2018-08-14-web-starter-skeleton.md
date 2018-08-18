@@ -92,10 +92,10 @@ const AuthenticatedRoute = props => {
   if (!isLoggedIn()) { // custom way to check is logged in goes here
     return (
       <Redirect
-        to={{
+        to={
           pathname: '/',
           state: { from: props.location }
-        }}
+        }
       />
     );
   }
