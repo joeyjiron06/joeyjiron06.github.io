@@ -175,7 +175,7 @@ Next go to your profile page by clicking on your username in the navigation bar 
 
 Next click the settings of icon for that repo. Then setup environment variables called `baseurl` which is the name of your repo with a slash at the beginning as well as the environment variable called `GITHUB_TOKEN`. If you don't have a github token, then read the previous step all the way through.  Make sure to keep the github token a SECRET by not displaying them in the logs! Mine look something like this
 
-![TravisCI environment vars](img/travisci-env-vars.png)
+![TravisCI environment vars](/img/travisci-env-vars.png)
 
 
 ### .travis.yml
