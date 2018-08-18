@@ -1,7 +1,7 @@
 ---
 published: false
 ---
-## Web App Starter Skeleton
+## React + Material UI + Travis CI + Github Pages Setup
 
 
 Ever just need some quick steps to getting your web project published and don't want to deal with maintenance of a backend? This article will walk you through a basic setup using React, React router, Material UI, Travis CI, Github Pages.
@@ -29,8 +29,8 @@ src
 | |_settings.js
 |
 |_components
-| |_commonComponent1.js
-| |_commonComponent2.js
+| |_component1.js
+| |_component2.js
 | |_appToolbar.js
 |
 |_index.js
@@ -87,14 +87,92 @@ import HomePage from './home';
 import SettingsPage from './settings';
 import Toolbar from '../components/toolbar';
 
+// should be in a separate file
+const AuthenticatedRoute = props => {
+  if (!isLoggedIn()) { // custom way to check is logged in goes here
+    return (
+      <Redirect
+        to={{
+          pathname: '/',
+          state: { from: props.location }
+        }}
+      />
+    );
+  }
+
+  return (
+    <div>
+      <Toolbar />
+      <Route {...props} />
+    </div>
+  );
+};
+
+
 export default () => (
   <Router basename={process.env.PUBLIC_URL}>
     <div>
-      <Toolbar />
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/settings" component={SettingsPage} />
+      <AuthenticatedRoute exact path="/settings" component={SettingsPage} />
     </div>
   </Router>
 );
 
 ```
+
+### Routes/home.js
+
+Now for a simple route setup. Here is how to style using material ui
+
+```jsx
+import React, { Component } from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
+
+class HomePage extends Component {
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className={classes.homePage}>
+        <div className={classes.titleContainer}>
+          <Typography variant="display4">Tasty</Typography>
+          <Typography variant="subheading">Recipes made easy</Typography>
+        </div>
+      </div>
+    );
+  }
+}
+
+const styles = theme => ({
+  homePage: {},
+  titleContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexGrow: 1,
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)'
+  }
+});
+
+export default withStyles(styles)(HomePage);
+```
+
+### Github
+
+To enable Github pages you first need to create a branch on github called `gh-pages`. This branch will be the branch that TravisCI will publish to during the CI process.
+
+### TravisCI
+
+To publish to github pages you can use any CI process you'd like. I chose Travis because I've used it before and the configuration setup is pretty easy. First sign up for a free account on [https://travis-ci.org/](https://travis-ci.org/).
+
+Next go to your profile page by clicking on your username in the navigation bar at the top right of the travis page. This should bring up a list of your repositories. Click the switch on so that the your repository that you want to setup for Github Pages publishing is turned on and "activated".
+
+Next click the settings of icon for that repo. Then setup environment variables. Mine look something like this
+
+
+
+
