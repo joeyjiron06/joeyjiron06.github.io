@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 ## React + Material UI + Travis CI + Github Pages Setup
 
@@ -77,7 +77,7 @@ If you'd like to further customize your theme then refer to the [documentation](
 
 ### Routes/index.js
 
-Now that you have your App setup it's time to create some routes. The very important part here is to add `basename={process.env.PUBLIC_URL}` to your router as a property. Later on `PUBLIC_URL` will be set by travis ci, so it is NECESSARY. If you'd like to further configure your router then refer to the [documentation](https://reacttraining.com/react-router/web/guides/philosophy).
+Now that you have your App setup it's time to create some routes. The very important part here is to add ```basename={process.env.PUBLIC_URL}``` to your router as a property. Later on `PUBLIC_URL` will be set by travis ci, so it is NECESSARY. If you'd like to further configure your router then refer to the [documentation](https://reacttraining.com/react-router/web/guides/philosophy).
 
 
 ```jsx
