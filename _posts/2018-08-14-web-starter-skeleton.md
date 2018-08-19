@@ -212,4 +212,28 @@ deploy:
     branch: master
 ```
 
+### Husky
+
+There's nothing more annoying than pushing your code and finding that it breaks in CI mode. One option is to throw an error on lint errors ALWAYS, because react-scripts only throws error in CI mode. I haven't tried to do this because it requires you to eject the scripts.
+
+This is where husky comes along. Install husky
+
+```
+npm install --save-dev husky
+```
+
+Then add the pre-push hook in package.json
+
+```json
+  "scripts": {
+    ...
+    "prepush": "CI=true npm run build"
+  },
+```
+
+Now, before you push your code, you will build your app and throw an error if any eslint errors occur.
+
+
+
+
 That's it! Go deploy and have fun!
