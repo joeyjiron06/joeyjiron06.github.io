@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Running eslint before commit with Husky
 
@@ -29,4 +29,3 @@ Open your `package.json` and under scripts add the following:
 Make sure that you add the double quotes around your glob filenames, otherwise it will **NOT** work. Read more about that [here](https://eslint.org/docs/user-guide/command-line-interface).
 
 Happy coding 😊!
-
