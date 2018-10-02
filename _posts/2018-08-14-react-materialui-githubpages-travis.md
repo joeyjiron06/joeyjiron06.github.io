@@ -220,7 +220,8 @@ Next step is to setup your eslint rules for your editor. Without this step your 
 {
   "extends": "react-app",
   "rules": {
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"]
   },
   "env": {
     "browser": true,
@@ -229,7 +230,6 @@ Next step is to setup your eslint rules for your editor. Without this step your 
   "parser": "babel-eslint",
   "plugins": ["react"]
 }
-
 ```
 
 ### Husky
