@@ -17,7 +17,7 @@ Javascript Primitive types
   function() {}, // Function
   {}, // Object
   [], // Array
-  Symbol() // Symbol
+  Symbol('symbol') // Symbol
 ]
 ```
 
