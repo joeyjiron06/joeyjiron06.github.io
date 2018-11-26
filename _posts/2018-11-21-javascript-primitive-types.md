@@ -30,7 +30,7 @@ JSON primitive types
   1234, // Number
   'string', // String
   {}, // Object
-  [], Array
+  [], // Array
   null, // Null
 ]
 ```
