@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## How to publish your React app to a custom domain using Github Pages and Google Domains
 
@@ -103,5 +103,3 @@ Github Pages needs to be configured to point to your custom domain. You can read
 ## Finish
 
 It may take 24 hours to see your new domain working because Github Pages needs to configure it properly. Once it's done doing what it needs to do, you should be good to go!
-
-
