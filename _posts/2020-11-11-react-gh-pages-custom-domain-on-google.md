@@ -29,7 +29,7 @@ Now it's time to configure your react app to work with the domain.
 
   ```json
   {
-    "homepsage": "https://example.com"
+    "homepage": "https://example.com"
   }
   ```
 - If you are using React Router, then make sure to use a basename with the following data
