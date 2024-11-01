@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joey Jiron</title>
+
+    <style>
+      /* https://tailwindcss.com/docs/customizing-colors */
+      :root {
+        --color-bg: black;
+        --color-bg-base-2: #171717;
+        --color-text: #a3a3a3;
+        --color-text-emphasized: white;
+        --color-accent: #f59e0b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Inter", system-ui, ui-sans-serif, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        color: var(--color-text-emphasized);
+      }
+
+      main {
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+      }
+
+      hgroup h1,
+      hgroup p {
+        padding: 0;
+      }
+
+      p {
+        line-height: 1.65;
+        padding: 1rem 0;
+      }
+
+      .link {
+        transition: color ease-in-out 75ms;
+        text-decoration-color: var(--color-text);
+        color: var(--color-text);
+      }
+
+      .link:visited {
+        color: var(--color-text);
+      }
+
+      .link:hover {
+        color: var(--color-accent);
+        text-decoration-color: var(--color-accent);
+      }
+
+      .card {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        color: var(--color-text);
+        border-radius: 0.375rem;
+        padding: 0.75rem;
+        margin-left: -0.75rem;
+      }
+
+      .card:hover {
+        background-color: var(--color-bg-base-2);
+      }
+
+      .card p {
+        padding: 0;
+      }
+
+      .card-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <hgroup>
+        <h1>Joey Jiron</h1>
+        <p>Software Engineer</p>
+      </hgroup>
+
+      <section>
+        <h2>Today</h2>
+        <p>
+          Software engineer at Microsoft by day, indie hacker by night. I love
+          to build web applications that solve interesting problems and are a
+          joy to use.
+        </p>
+      </section>
+
+      <section class="card-list">
+        <h2>Startups</h2>
+        <a target="_blank" class="card" href="https://www.landmarkai.dev/">
+          <h3>Landmark AI</h3>
+          <p>Create stunning landing pages in seconds with AI.</p>
+        </a>
+
+        <a
+          class="card"
+          href="https://lemon-mud-0f4bd4a1e.5.azurestaticapps.net/"
+        >
+          <h3>Packet</h3>
+          <p>
+            Intercept and modify network requests with this Chrome extension.
+          </p>
+        </a>
+      </section>
+
+      <section class="card-list">
+        <h2>Projects</h2>
+        <a
+          target="_blank"
+          class="card"
+          href="https://joeyjiron06.github.io/snippets/"
+        >
+          <h3>Snippets</h3>
+          <p>The home for the snippets that I use between projects.</p>
+        </a>
+
+        <a
+          target="_blank"
+          class="card"
+          href="https://github.com/joeyjiron06/basecamp"
+        >
+          <h3>Basecamp</h3>
+          <p>
+            Use semantic HTML elements with better styling with Tailwind CSS.
+          </p>
+        </a>
+
+        <a target="_blank" class="card" href="https://www.ajdesigngroup.net/">
+          <h3>AJ Design Group</h3>
+          <p>
+            A website I built for my father's Mechanical engineering consulting
+            company.
+          </p>
+        </a>
+
+        <a
+          target="_blank"
+          class="card"
+          href="https://www.npmjs.com/package/object-from-search-params"
+        >
+          <h3>object-from-search-params</h3>
+          <p>
+            A super tiny package that parses query parameters into Javascript
+            primitive types.
+          </p>
+        </a>
+
+        <!--  -->
+      </section>
+
+      <section>
+        <h2>More</h2>
+        <p>
+          You can see more of my work on
+          <a class="link" href="https://github.com/joeyjiron06">Github</a>,
+          <a class="link" href="https://x.com/joeyjiron06">X</a> as
+          <a class="link" href="https://www.linkedin.com/in/joeyjiron/"
+            >LinkedIn</a
+          >.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
